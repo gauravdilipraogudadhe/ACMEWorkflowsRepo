@@ -1,0 +1,88 @@
+{
+  "name": "ACME_TestAutomation_AD",
+  "projectId": "858c2390-95d3-4c53-ba4e-d791a2d1c43d",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "ACMEUiObjectLibrary": "[1.0.0]",
+    "UiPath.System.Activities": "[25.12.2]",
+    "UiPath.Testing.Activities": "[25.10.1]",
+    "UiPath.UIAutomation.Activities": "25.10.30",
+    "UiPath.WebAPI.Activities": "[2.4.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.166.0",
+  "projectVersion": "1.0.230117232",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "34098d43-ffa8-4735-aefa-a36446c2e19f",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "de5790e5-478c-453c-9d53-c66dfeae01b6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "ACME_Automation\\TC02_AddVendor.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1779d4e5-4dfb-4123-81b5-75ddca871d52",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "ACME_Automation\\TC03_SearchVendor.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7b542169-6a7b-4aec-8eb6-d5191fba5f62",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "ACME_Automation\\TC01_ACMELogin.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3b78f9e5-871a-435c-8e0d-af5e44c98be6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiBankLoanApplication\\TC04_API_NewQuote.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

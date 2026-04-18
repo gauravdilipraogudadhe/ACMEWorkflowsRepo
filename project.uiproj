@@ -1,0 +1,6 @@
+{
+  "Name": "ACME_TestAutomation_AD",
+  "ProjectType": "Tests",
+  "Description": "Test Automation Project",
+  "MainFile": "Main.xaml"
+}
