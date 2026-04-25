@@ -241,7 +241,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Add vendor using below steps.&#xA;1) Click on Vendors button.&#xA;2) Click on AddVendor button&#xA;3) Enter random data in VendorTaxID, Name, Address, City, Country and click on SaveVendor. Verify if vendore is saved by checking if VendorSaveConfirmation is displayed.&#xA;4) VendorTaxID should be random number between 1-100. Name should be random combination of first name and last name, Address, City and country should be random&#xA;" DisplayName="AddVendor" sap:VirtualizedContainerService.HintSize="646.6666666666666,3889.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Add vendor using below steps.&#xA;1) Click on Vendors button.&#xA;2) Click on AddVendor button&#xA;3) Enter random data in VendorTaxID, Name, Address, City, Country and click on SaveVendor. Verify if vendore is saved by checking if VendorSaveConfirmation is displayed.&#xA;4) VendorTaxID should be random number between 1-100. Name should be random combination of first name and last name, Address, City and country should be random&#xA;" DisplayName="AddVendor" sap:VirtualizedContainerService.HintSize="918.6666666666666,4066" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="firstName" />
       <Variable x:TypeArguments="x:String" Name="lastName" />
@@ -265,7 +265,7 @@
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <utat:Address AddressResult="[randomAddress]" City="&lt;Random City&gt;" Country="&lt;Random Country&gt;" DisplayName="Generate a random address, city, and country." sap:VirtualizedContainerService.HintSize="488,229.33333333333334" sap2010:WorkflowViewState.IdRef="Address_1" />
-    <Assign DisplayName="Extract the random address from the generated address data." sap:VirtualizedContainerService.HintSize="488,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign DisplayName="Extract the random address from the generated address data." sap:VirtualizedContainerService.HintSize="488,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vendorAddress]</OutArgument>
       </Assign.To>
@@ -273,7 +273,7 @@
         <InArgument x:TypeArguments="x:String">[randomAddress("StreetNumber") + ", "+randomAddress("StreetName") + ", "+randomAddress("PostalCode")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Extract the random city from the generated address data." sap:VirtualizedContainerService.HintSize="488,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign DisplayName="Extract the random city from the generated address data." sap:VirtualizedContainerService.HintSize="488,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vendorCity]</OutArgument>
       </Assign.To>
@@ -281,7 +281,7 @@
         <InArgument x:TypeArguments="x:String">[randomAddress("City")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Extract the random country from the generated address data." sap:VirtualizedContainerService.HintSize="488,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign DisplayName="Extract the random country from the generated address data." sap:VirtualizedContainerService.HintSize="488,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vendorCountry]</OutArgument>
       </Assign.To>
